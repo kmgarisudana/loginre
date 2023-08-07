@@ -49,7 +49,7 @@ public class KaryawanController {
         //pliss don't show the password
 
     }
-    @PreAuthorize("hasAnyRole('ROLE_ADMIN')")
+    //@PreAuthorize("hasAnyRole('ROLE_ADMIN')")
     @GetMapping("/{id}")
     public KaryawanDTO findById(@PathVariable Long id) {
         final KaryawanEntity result = karyawanService.finbById(id);
